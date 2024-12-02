@@ -1,1 +1,3 @@
-Advent of code solutions. adventofcode.com
+# Advent of Code
+
+Solutions for [adventofcode.com](https://adventofcode.com) in Rust.
