@@ -4,10 +4,8 @@ use std::{
     io::{BufRead, BufReader},
 };
 
-use crate::INPUT_PATH;
-
 fn get_input() -> Vec<(i32, i32)> {
-    let f = File::open(INPUT_PATH).expect("Input file could not be opened");
+    let f = File::open("input.txt").expect("Input file could not be opened");
     let reader = BufReader::new(f);
 
     let mut vec = Vec::new();
