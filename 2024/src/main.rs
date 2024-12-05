@@ -1,7 +1,7 @@
-use solutions::{day_1, day_2, day_3};
+use solutions::{day_1, day_2, day_3, day_4};
 
 /// Controls which day's solution is executed.
-const DAY: u8 = 3;
+const DAY: u8 = 4;
 const PART: u8 = 2;
 
 fn main() {
@@ -18,6 +18,8 @@ fn solve(day: u8, part: u8) -> i32 {
         (2, 2) => day_2::part2(),
         (3, 1) => day_3::part1(),
         (3, 2) => day_3::part2(),
+        (4, 1) => day_4::part1(),
+        (4, 2) => day_4::part2(),
         _ => 0,
     }
 }
