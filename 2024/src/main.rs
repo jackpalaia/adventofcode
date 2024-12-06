@@ -1,11 +1,13 @@
-use solutions::{day_1, day_2, day_3, day_4};
+use std::env;
 
-/// Controls which day's solution is executed.
-const DAY: u8 = 4;
-const PART: u8 = 2;
+use solutions::{day_1, day_2, day_3, day_4, day_5};
 
 fn main() {
-    let ans = solve(DAY, PART);
+    let args: Vec<String> = env::args().collect();
+    let day = args[1].parse::<u8>().unwrap();
+    let part = args[2].parse::<u8>().unwrap();
+
+    let ans = solve(day, part);
     println!("{ans}");
 }
 
@@ -20,6 +22,8 @@ fn solve(day: u8, part: u8) -> i32 {
         (3, 2) => day_3::part2(),
         (4, 1) => day_4::part1(),
         (4, 2) => day_4::part2(),
+        (5, 1) => day_5::part1(),
+        (5, 2) => day_5::part2(),
         _ => 0,
     }
 }
