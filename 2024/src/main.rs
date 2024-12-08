@@ -1,6 +1,6 @@
 use std::env;
 
-use solutions::{day_1, day_2, day_3, day_4, day_5};
+use solutions::{day_1, day_2, day_3, day_4, day_5, day_6};
 
 fn main() {
     let args: Vec<String> = env::args().collect();
@@ -24,6 +24,8 @@ fn solve(day: u8, part: u8) -> i32 {
         (4, 2) => day_4::part2(),
         (5, 1) => day_5::part1(),
         (5, 2) => day_5::part2(),
+        (6, 1) => day_6::part1(),
+        (6, 2) => day_6::part2(),
         _ => 0,
     }
 }
