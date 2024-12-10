@@ -14,3 +14,5 @@ pub mod day_6;
 pub mod day_7;
 #[path = "8.rs"]
 pub mod day_8;
+#[path = "9.rs"]
+pub mod day_9;
